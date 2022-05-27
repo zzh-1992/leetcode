@@ -26,7 +26,7 @@ public class HJ85最长回文子串 {
                 if (isRe(sub)) {
                     max = Math.max(sub.length(), max);
                 }
-                //System.out.println("sub:" + sub + " " + isRe(sub));
+                //System.out.println("sub:" + sub + " " + isRe(sub)); 
             }
         }
         System.out.println(max);

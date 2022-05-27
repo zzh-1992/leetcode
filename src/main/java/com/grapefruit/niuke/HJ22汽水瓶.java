@@ -21,7 +21,7 @@ public class HJ22汽水瓶{
         Scanner input = new Scanner(System.in);
         HashMap<String,Integer> map = new HashMap();
         while(input.hasNext()){
-            Integer i = input.nextInt();
+            int i = input.nextInt();
             if(i == 0){
                 continue;
             }

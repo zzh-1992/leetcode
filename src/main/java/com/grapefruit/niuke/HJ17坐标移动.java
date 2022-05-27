@@ -23,29 +23,24 @@ public class HJ17坐标移动 {
         int y = 0;
         if (input.hasNext()) {
             String[] arr = input.nextLine().split(";");
-            for (int i = 0; i < arr.length; i++) {
-                String str = arr[i];
+            for (String str : arr) {
                 boolean flag = Pattern.matches(regex, str);
                 if (flag) {
                     String s1 = str.substring(0, 1);
                     String s2 = str.substring(1, str.length());
+                    int value = Integer.parseInt(s2);
                     if ("A".equals(s1) || Pattern.matches(regex, s2)) {
-                        int value = Integer.valueOf(s2);
                         x = x - value;
                     }
                     if ("D".equals(s1)) {
-                        int value = Integer.valueOf(s2);
                         x = x + value;
                     }
                     if ("W".equals(s1)) {
-                        int value = Integer.valueOf(s2);
                         y = y + value;
                     }
                     if ("S".equals(s1)) {
-                        int value = Integer.valueOf(s2);
                         y = y - value;
                     }
-
                 }
             }
             System.out.println(x + "," + y);
