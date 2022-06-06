@@ -11,7 +11,7 @@ package com.grapefruit.linkerlist;
  * @version 1.0
  * @date 2022-05-27 21:45
  */
-public class NodeTest {
+public class 逆序打印单链表 {
     public static void main(String[] args) {
         // 准备单链表
         Node n1 = new Node(1);
@@ -46,17 +46,4 @@ public class NodeTest {
 /**
  * 节点node
  */
-class Node {
-    /**
-     * 当前节点的数值
-     */
-    int value;
-    /**
-     * 下一个节点
-     */
-    Node next;
 
-    public Node(int value) {
-        this.value = value;
-    }
-}
